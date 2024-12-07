@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: white;
+  background: black;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+}
+
+html {
+  font-size: 12pt;
+  /* scroll-snap-type: y mandatory; */
+}
+
+h2 {
+  font-size: clamp(1rem, 5vw, 5rem);
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.5em;
+  /* margin-right: -0.5em; */
+  color: hsl(0, 0%, 80%);
+  width: 100vw;
+  max-width: 1200px;
+}
+
+/* meow popup text */
+p {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 10rem;
+  text-transform: none;
+  text-align: center;
+  font-style: italic;
+  color:#434343;
+  font-family: Georgia,'Times New Roman',Times,serif;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+
+button {
+  font: inherit;
+  font-size: clamp(1rem, 5vw, 5rem);
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.2em;
+  width: 60vw;
+  border: none;
+}
+
+button:hover {
+  background-color: slategray;
+  border: none;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  -webkit-transform: translateY(50vh) translateY(-50%);
+  transform: translateY(50vh) translateY(-50%);
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  min-width: 500px;
+  max-width: 32%;
+  height: auto;
+  background-color: white;
+  border:hsl(0, 0%, 0%) solid 5px;
+  z-index: 2;
+}
+
+.popup:has(iframe) {
+  min-width: 50rem;
+}
+
+.text-popup {
+  min-width: 50rem;
+}
+
+.popup img, .popup iframe {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  /* display: block; */
+}
+
+.popup img {
+  pointer-events: none;
+}
+
+.popup iframe {
+  /* min-width: 50rem; */
+  min-height: 40rem;
+  /* width:max-content; */
+  /* width:fit-content; */
+  /* min-width: 100%; */
+  /* max-width: 80rem; */
+  /* margin:54pt 72pt; */
+}
+
+/* title label for text popups */
+.popup-text-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* title label */
+.popup h1 {
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.popup-button {
+  width: fit-content;
+  position: absolute;
+  background-color: transparent;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(1rem, 5vw, 5rem);
+  font-weight: 500;
+  color: black;
+  opacity: 50%;
+  margin: 1rem;
+}
+
+.popup-button:hover {
+  color: #00ff194c;
+  opacity: 100%;
+  background-color: transparent;
+}
+
+/* section .im h2 {
+  z-index: 2;
+}
+section .im .clip-text {
+  overflow: hidden;
+} */
+
+h2 * {
+  will-change: transform;
+}
+
+/*# sourceMappingURL=index.css.map */
