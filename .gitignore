@@ -3,8 +3,8 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
-.cache
-.parcel-cache/data.mdb
+*.cache
+*.parcel-cache/
 dist
 
 # User-specific files
