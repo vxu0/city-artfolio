@@ -28,7 +28,7 @@ export default function (props) {
         <div className='popup'>
             <button className="popup-button" onClick={props.handleClick}>X</button>
             {id === 2 && <iframe src={summer}/>} 
-            {id === 1 && <p>"meow"</p>}
+            {id === 1 && <p>meow :)</p>}
             {id !== 2 && id !== 1 && <img src={areaImages[id]}></img>}
             {id > 1 &&
             <div className='popup-text-wrapper'>

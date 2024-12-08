@@ -27,7 +27,5 @@ function App() {
  // add click event listener
  
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App/>
-  </React.StrictMode>
+  <App/>
 );
