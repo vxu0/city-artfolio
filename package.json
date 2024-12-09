@@ -14,10 +14,12 @@
   "name": "city-artfolio",
   "version": "1.0.0",
   "description": "digital collage art portfolio",
+  "source": "index.html",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "start": "parcel",
+    "build": "parcel build",
+    "build-dev": "parcel build"
   }
 }
