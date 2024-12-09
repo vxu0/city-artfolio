@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"dlFZn":[function(require,module,exports) {
+})({"km5uZ":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "7a6896a1d498c491";
+module.bundle.HMR_BUNDLE_ID = "0a8ecb283d214d75";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -2944,11 +2944,11 @@ process.umask = function() {
     return 0;
 };
 
-},{}],"g9R30":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$046e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"bB7Pu":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$e4e3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$046e.prelude(module);
+$parcel$ReactRefreshHelpers$e4e3.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -2957,59 +2957,20 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-var _mapper = require("./components/Mapper");
-var _mapperDefault = parcelHelpers.interopDefault(_mapper);
-var _cityDayV0Png = require("./images/city-day-v0.png");
-var _cityDayV0PngDefault = parcelHelpers.interopDefault(_cityDayV0Png);
-var _cityNightV0Png = require("./images/city-night-v0.png");
-var _cityNightV0PngDefault = parcelHelpers.interopDefault(_cityNightV0Png);
-var _mapAreasJson = require("./map-areas.json");
-var _mapAreasJsonDefault = parcelHelpers.interopDefault(_mapAreasJson);
-var _s = $RefreshSig$();
-function App() {
-    _s();
-    const [mode, setMode] = (0, _reactDefault.default).useState("day");
-    function changeMode() {
-        if (mode === "day") setMode("night");
-        else setMode("day");
-    }
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "map-container",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mapperDefault.default), {
-            name: "map",
-            areas: (0, _mapAreasJsonDefault.default),
-            dayImg: (0, _cityDayV0PngDefault.default),
-            nightImg: (0, _cityNightV0PngDefault.default),
-            mode: mode,
-            changeMode: changeMode
-        }, void 0, false, {
-            fileName: "index.jsx",
-            lineNumber: 22,
-            columnNumber: 13
-        }, this)
-    }, void 0, false, {
-        fileName: "index.jsx",
-        lineNumber: 21,
-        columnNumber: 9
-    }, this);
-}
-_s(App, "sQRLwYoMKucuY9DsM4oTxOq6x9A=");
-_c = App;
+var _app = require("./App");
 // add click event listener
-(0, _clientDefault.default).createRoot(document.getElementById("root")).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
-    fileName: "index.jsx",
-    lineNumber: 32,
+(0, _clientDefault.default).createRoot(document.getElementById("root")).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _app.App), {}, void 0, false, {
+    fileName: "index.js",
+    lineNumber: 9,
     columnNumber: 3
 }, undefined));
-var _c;
-$RefreshReg$(_c, "App");
 
-  $parcel$ReactRefreshHelpers$046e.postlude(module);
+  $parcel$ReactRefreshHelpers$e4e3.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Mapper":"7Mk6o","./images/city-day-v0.png":"bFHsH","./images/city-night-v0.png":"8HJc1","./map-areas.json":"apQ3r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./App":"2Ew96","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27252,7 +27213,234 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"7Mk6o":[function(require,module,exports) {
+},{}],"2Ew96":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$c1db = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$c1db.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "App", ()=>App);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _mapper = require("./components/Mapper");
+var _mapperDefault = parcelHelpers.interopDefault(_mapper);
+var _cityDayV0Png = require("./images/city-day-v0.png");
+var _cityDayV0PngDefault = parcelHelpers.interopDefault(_cityDayV0Png);
+var _cityNightV0Png = require("./images/city-night-v0.png");
+var _cityNightV0PngDefault = parcelHelpers.interopDefault(_cityNightV0Png);
+var _mapAreasJson = require("./map-areas.json");
+var _mapAreasJsonDefault = parcelHelpers.interopDefault(_mapAreasJson);
+var _s = $RefreshSig$();
+function App() {
+    _s();
+    const [mode, setMode] = (0, _reactDefault.default).useState("day");
+    function changeMode() {
+        if (mode === "day") setMode("night");
+        else setMode("day");
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "map-container",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mapperDefault.default), {
+            name: "map",
+            areas: (0, _mapAreasJsonDefault.default),
+            dayImg: (0, _cityDayV0PngDefault.default),
+            nightImg: (0, _cityNightV0PngDefault.default),
+            mode: mode,
+            changeMode: changeMode
+        }, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 21,
+            columnNumber: 13
+        }, this)
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 20,
+        columnNumber: 9
+    }, this);
+}
+_s(App, "sQRLwYoMKucuY9DsM4oTxOq6x9A=");
+_c = App;
+var _c;
+$RefreshReg$(_c, "App");
+
+  $parcel$ReactRefreshHelpers$c1db.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","./components/Mapper":"7Mk6o","./images/city-day-v0.png":"klUJq","./images/city-night-v0.png":"iyTcB","./map-areas.json":"apQ3r"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"km3Ru":[function(require,module,exports) {
+"use strict";
+var Refresh = require("7422ead32dcc1e6b");
+function debounce(func, delay) {
+    {
+        let timeout = undefined;
+        let lastTime = 0;
+        return function(args) {
+            // Call immediately if last call was more than the delay ago.
+            // Otherwise, set a timeout. This means the first call is fast
+            // (for the common case of a single update), and subsequent updates
+            // are batched.
+            let now = Date.now();
+            if (now - lastTime > delay) {
+                lastTime = now;
+                func.call(null, args);
+            } else {
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = undefined;
+                    lastTime = Date.now();
+                    func.call(null, args);
+                }, delay);
+            }
+        };
+    }
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30);
+// Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module1) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module1.id + " " + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module1) {
+    if (isReactRefreshBoundary(module1.exports)) {
+        registerExportsForReactRefresh(module1);
+        if (module1.hot) {
+            module1.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module1.exports;
+            });
+            module1.hot.accept(function(getParents) {
+                var prevExports = module1.hot.data.prevExports;
+                var nextExports = module1.exports;
+                // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
+                // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+}
+// When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module1) {
+    var exports = module1.exports, id = module1.id;
+    Refresh.register(exports, id + " %exports%");
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        var typeID = id + " %exports% " + key;
+        Refresh.register(exportValue, typeID);
+    }
+}
+
+},{"7422ead32dcc1e6b":"786KC"}],"7Mk6o":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8ff7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28116,10 +28304,10 @@ const areaImages = {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../text/summer.html":"8gCXj","../images/orchid.png":"iMEDG","../images/construction.jpeg":"8O49M","../images/kitchen.jpeg":"7782n","../images/sprawl.jpeg":"hYw8E","../images/fish.png":"btEch","../images/film-set.png":"gW52Y","../images/corner.jpeg":"2jtTY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8gCXj":[function(require,module,exports) {
-module.exports = require("9009aed0b0e87043").getBundleURL("avzPb") + "summer.c64ac6ae.html" + "?" + Date.now();
+},{"react/jsx-dev-runtime":"iTorj","../text/summer.html":"aIeTH","../images/orchid.png":"6Mvzp","../images/construction.jpeg":"dYYL6","../images/kitchen.jpeg":"aMDOk","../images/sprawl.jpeg":"aWrsu","../images/fish.png":"c7YBk","../images/film-set.png":"lyMOt","../images/corner.jpeg":"foSHk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aIeTH":[function(require,module,exports) {
+module.exports = require("ea3278f657ab397e").getBundleURL("UckoE") + "summer.c64ac6ae.html" + "?" + Date.now();
 
-},{"9009aed0b0e87043":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+},{"ea3278f657ab397e":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -28154,204 +28342,36 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"iMEDG":[function(require,module,exports) {
-module.exports = require("bbdfc85bf211f6ef").getBundleURL("avzPb") + "orchid.196c6d29.png" + "?" + Date.now();
+},{}],"6Mvzp":[function(require,module,exports) {
+module.exports = require("4312053df543769").getBundleURL("UckoE") + "orchid.196c6d29.png" + "?" + Date.now();
 
-},{"bbdfc85bf211f6ef":"lgJ39"}],"8O49M":[function(require,module,exports) {
-module.exports = require("b02d61de44632210").getBundleURL("avzPb") + "construction.4748d477.jpeg" + "?" + Date.now();
+},{"4312053df543769":"lgJ39"}],"dYYL6":[function(require,module,exports) {
+module.exports = require("3535864efd4b644b").getBundleURL("UckoE") + "construction.4748d477.jpeg" + "?" + Date.now();
 
-},{"b02d61de44632210":"lgJ39"}],"7782n":[function(require,module,exports) {
-module.exports = require("99ee9204276eefe0").getBundleURL("avzPb") + "kitchen.239b1537.jpeg" + "?" + Date.now();
+},{"3535864efd4b644b":"lgJ39"}],"aMDOk":[function(require,module,exports) {
+module.exports = require("5fef79af57f6de4").getBundleURL("UckoE") + "kitchen.239b1537.jpeg" + "?" + Date.now();
 
-},{"99ee9204276eefe0":"lgJ39"}],"hYw8E":[function(require,module,exports) {
-module.exports = require("64a6bdaee905fd02").getBundleURL("avzPb") + "sprawl.06591ef6.jpeg" + "?" + Date.now();
+},{"5fef79af57f6de4":"lgJ39"}],"aWrsu":[function(require,module,exports) {
+module.exports = require("1a325843a369f01c").getBundleURL("UckoE") + "sprawl.06591ef6.jpeg" + "?" + Date.now();
 
-},{"64a6bdaee905fd02":"lgJ39"}],"btEch":[function(require,module,exports) {
-module.exports = require("353aab35a008b702").getBundleURL("avzPb") + "fish.291ddb67.png" + "?" + Date.now();
+},{"1a325843a369f01c":"lgJ39"}],"c7YBk":[function(require,module,exports) {
+module.exports = require("a8763fb6995d808c").getBundleURL("UckoE") + "fish.291ddb67.png" + "?" + Date.now();
 
-},{"353aab35a008b702":"lgJ39"}],"gW52Y":[function(require,module,exports) {
-module.exports = require("37268f0bf05aaf51").getBundleURL("avzPb") + "film-set.1bc042d8.png" + "?" + Date.now();
+},{"a8763fb6995d808c":"lgJ39"}],"lyMOt":[function(require,module,exports) {
+module.exports = require("98c5ef873d30092b").getBundleURL("UckoE") + "film-set.1bc042d8.png" + "?" + Date.now();
 
-},{"37268f0bf05aaf51":"lgJ39"}],"2jtTY":[function(require,module,exports) {
-module.exports = require("b84e0b820f5e7989").getBundleURL("avzPb") + "corner.9743fd5a.jpeg" + "?" + Date.now();
+},{"98c5ef873d30092b":"lgJ39"}],"foSHk":[function(require,module,exports) {
+module.exports = require("8d2bd1b964b71521").getBundleURL("UckoE") + "corner.9743fd5a.jpeg" + "?" + Date.now();
 
-},{"b84e0b820f5e7989":"lgJ39"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
+},{"8d2bd1b964b71521":"lgJ39"}],"klUJq":[function(require,module,exports) {
+module.exports = require("39e8793ad2ac1575").getBundleURL("UckoE") + "city-day-v0.10b9ffa5.png" + "?" + Date.now();
 
-},{}],"km3Ru":[function(require,module,exports) {
-"use strict";
-var Refresh = require("7422ead32dcc1e6b");
-function debounce(func, delay) {
-    {
-        let timeout = undefined;
-        let lastTime = 0;
-        return function(args) {
-            // Call immediately if last call was more than the delay ago.
-            // Otherwise, set a timeout. This means the first call is fast
-            // (for the common case of a single update), and subsequent updates
-            // are batched.
-            let now = Date.now();
-            if (now - lastTime > delay) {
-                lastTime = now;
-                func.call(null, args);
-            } else {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    timeout = undefined;
-                    lastTime = Date.now();
-                    func.call(null, args);
-                }, delay);
-            }
-        };
-    }
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30);
-// Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module1) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module1.id + " " + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module1) {
-    if (isReactRefreshBoundary(module1.exports)) {
-        registerExportsForReactRefresh(module1);
-        if (module1.hot) {
-            module1.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module1.exports;
-            });
-            module1.hot.accept(function(getParents) {
-                var prevExports = module1.hot.data.prevExports;
-                var nextExports = module1.exports;
-                // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
-                // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-}
-// When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module1) {
-    var exports = module1.exports, id = module1.id;
-    Refresh.register(exports, id + " %exports%");
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        var typeID = id + " %exports% " + key;
-        Refresh.register(exportValue, typeID);
-    }
-}
+},{"39e8793ad2ac1575":"lgJ39"}],"iyTcB":[function(require,module,exports) {
+module.exports = require("62f74774d8ec9910").getBundleURL("UckoE") + "city-night-v0.c78b305d.png" + "?" + Date.now();
 
-},{"7422ead32dcc1e6b":"786KC"}],"bFHsH":[function(require,module,exports) {
-module.exports = require("c8b0b4015873f707").getBundleURL("avzPb") + "city-day-v0.10b9ffa5.png" + "?" + Date.now();
-
-},{"c8b0b4015873f707":"lgJ39"}],"8HJc1":[function(require,module,exports) {
-module.exports = require("624dee53bb4250a3").getBundleURL("avzPb") + "city-night-v0.c78b305d.png" + "?" + Date.now();
-
-},{"624dee53bb4250a3":"lgJ39"}],"apQ3r":[function(require,module,exports) {
+},{"62f74774d8ec9910":"lgJ39"}],"apQ3r":[function(require,module,exports) {
 module.exports = JSON.parse('[{"title":"Kitty","shape":"poly","name":"1","fillColor":"#00ff194c","strokeColor":"transparent","coords":[1905,1813,1901,1810,1885,1808,1883,1815,1892,1836,1893,1850,1885,1863,1866,1865,1829,1869,1817,1867,1822,1845,1812,1841,1800,1853,1785,1852,1776,1843,1766,1845,1763,1858,1773,1919,1756,1970,1771,1986,1778,1992,1905,1986,1935,1954,1935,1964,1910,1893,1935,1860,1920,1825]},{"title":"Summer in Shanghai","shape":"rect","name":"2","fillColor":"#00ff194c","strokeColor":"transparent","coords":[591,1359,435,1151]},{"title":"Corner","shape":"rect","name":"3","fillColor":"#00ff194c","strokeColor":"transparent","coords":[656,1198,837,1435]},{"title":"Construction","shape":"rect","name":"4","fillColor":"#00ff194c","strokeColor":"transparent","coords":[678,1433,865,1683]},{"title":"Orchid","shape":"rect","name":"5","fillColor":"#00ff194c","strokeColor":"transparent","coords":[904,1211,1121,1488]},{"title":"Sprawl","shape":"rect","name":"6","fillColor":"#00ff194c","strokeColor":"transparent","coords":[1177,1437,1465,1654]},{"title":"Kitchen","shape":"rect","name":"7","fillColor":"#00ff194c","strokeColor":"transparent","coords":[1183,1225,1468,1438]},{"title":"Fish","shape":"rect","name":"8","fillColor":"#00ff194c","strokeColor":"transparent","coords":[1294,1527,1599,1734]},{"title":"Germany","shape":"poly","name":"9","fillColor":"#00ff194c","strokeColor":"transparent","coords":[1341,1109,1345,1304,1541,1301,1536,1106]},{"title":"Door","shape":"poly","name":"10","fillColor":"#00ff194c","strokeColor":"transparent","coords":[390,1839,400,1401,631,1402,626,1839]},{"title":"Lamp","shape":"poly","name":"11","fillColor":"#00ff194c","strokeColor":"transparent","coords":[1689,2043,1698,2016,1674,1965,1672,1938,1659,1913,1657,1794,1672,1757,1642,1725,1649,1688,1637,1614,1628,1097,1633,1057,1630,993,1622,988,1630,986,1630,972,1618,971,1616,899,1625,899,1627,889,1616,885,1615,643,1632,642,1628,489,1645,454,1616,427,1617,264,1665,208,1670,226,1663,233,1658,255,1653,301,1633,328,1650,396,1692,401,1717,399,1743,352,1750,325,1738,308,1729,287,1726,235,1709,218,1709,146,1687,64,1655,45,1624,57,1578,138,1568,433,1550,452,1553,481,1568,522,1572,643,1582,645,1580,886,1570,891,1575,902,1583,903,1583,975,1576,977,1574,987,1584,987,1571,1009,1575,1623,1566,1734,1550,1760,1553,1921,1538,1973,1536,2050]}]');
 
-},{}]},["dlFZn","1xC6H","g9R30"], "g9R30", "parcelRequireb478")
+},{}]},["km5uZ","1xC6H","bB7Pu"], "bB7Pu", "parcelRequireb478")
 
-//# sourceMappingURL=index.d498c491.js.map
+//# sourceMappingURL=index.3d214d75.js.map
