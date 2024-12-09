@@ -17,9 +17,11 @@ function App() {
         };
     }
     
-    return (<div className="map-container">
-                <Mapper name='map' areas={areas} dayImg={day} nightImg={night} mode={mode} changeMode={changeMode}/>
-            </div>)
+    return (
+        <div className="map-container">
+            <Mapper name='map' areas={areas} dayImg={day} nightImg={night} mode={mode} changeMode={changeMode}/>
+        </div>
+    );
 };
 
 
