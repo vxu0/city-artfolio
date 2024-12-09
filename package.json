@@ -15,6 +15,7 @@
   "version": "1.0.0",
   "description": "digital collage art portfolio",
   "source": "index.html",
+  "homepage": "https://vxu0.github.io/city-artfolio",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
