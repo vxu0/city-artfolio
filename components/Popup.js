@@ -1,11 +1,11 @@
-import summer from '../../text/summer.html';
-import orchid from '../../images/orchid.png';
-import construction from '../../images/construction.jpeg';
-import kitchen from '../../images/kitchen.jpeg';
-import sprawl from '../../images/sprawl.jpeg';
-import fish from '../../images/fish.png';
-import film from '../../images/film-set.png';
-import corner from '../../images/corner.jpeg';
+import summer from '../text/summer.html';
+import orchid from '../images/orchid.png';
+import construction from '../images/construction.jpeg';
+import kitchen from '../images/kitchen.jpeg';
+import sprawl from '../images/sprawl.jpeg';
+import fish from '../images/fish.png';
+import film from '../images/film-set.png';
+import corner from '../images/corner.jpeg';
 
 const areaImages = {
     // 1: kitty,

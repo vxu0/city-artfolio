@@ -17,7 +17,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "start": "parcel docs/index.html",
-    "build": "parcel build docs/index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   }
 }
