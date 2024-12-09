@@ -5,6 +5,7 @@
 
 .parcel-cache/
 dist
+node_modules
 
 # User-specific files
 *.rsuser
