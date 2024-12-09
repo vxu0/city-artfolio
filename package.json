@@ -19,7 +19,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "start": "parcel",
-    "build": "parcel build",
-    "build-dev": "parcel build"
+    "build": "parcel build"
   }
 }
