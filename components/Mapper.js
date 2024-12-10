@@ -14,6 +14,7 @@ const Mapper = props => {
   }
   
   const URL = props.mode === "day" ? props.dayImg : props.nightImg;
+  // const URL = props.dayImg;
   const MAP = {
       name: props.name,
       areas: props.areas,

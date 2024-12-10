@@ -1,7 +1,7 @@
 import React from "react";
 import Mapper from "./components/Mapper";
-import day from './images/city-day-v0.png';
-import night from './images/city-night-v0.png';
+import day from './images/city-day-v0-small.png';
+import night from './images/city-night-v0-small.png';
 import areas from './map-areas.json';
 
 export function App() {
