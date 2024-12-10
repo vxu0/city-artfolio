@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  color: #fff;
+  text-transform: uppercase;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Courier New, Courier, monospace;
+}
+
+html {
+  font-size: 12pt;
+}
+
+.map-container {
+  justify-content: center;
+  margin: 0;
+  display: flex;
+}
+
+.map-container img {
+  width: 1080px;
+  height: auto;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  width: 100vw;
+  max-width: 1200px;
+  font-size: clamp(1.5rem, 3vw, 8rem);
+  font-weight: 400;
+}
+
+p {
+  text-transform: none;
+  text-align: center;
+  color: #434343;
+  font-family: Georgia, Times New Roman, Times, serif;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-style: italic;
+  line-height: 2rem;
+}
+
+.button-wrapper {
+  justify-content: center;
+  padding-bottom: 2em;
+  display: flex;
+}
+
+button {
+  font: inherit;
+  text-align: center;
+  letter-spacing: .2em;
+  border: none;
+  width: 60vw;
+  font-size: clamp(1.5rem, 2.5vw, 1.75rem);
+  font-weight: 400;
+}
+
+button:hover {
+  background-color: #708090;
+  border: none;
+}
+
+.map-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.popup {
+  z-index: 2;
+  background-color: #fff;
+  border: 5px solid #000;
+  min-width: 250px;
+  max-width: 32%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  transform: translateY(50vh)translateY(-50%);
+}
+
+.popup:has(iframe), .text-popup {
+  min-width: 25rem;
+}
+
+.popup img, .popup iframe {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.popup img {
+  pointer-events: none;
+}
+
+.popup iframe {
+  min-height: 20rem;
+}
+
+.popup-text-wrapper {
+  justify-content: center;
+  display: flex;
+}
+
+.popup h1 {
+  color: #000;
+  font-family: Courier New, Courier, monospace;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 300;
+}
+
+.popup-button {
+  color: #000;
+  opacity: .5;
+  background-color: #0000;
+  width: fit-content;
+  margin: .5rem;
+  font-family: Courier New, Courier, monospace;
+  font-weight: 500;
+  position: absolute;
+}
+
+.popup-button:hover {
+  color: #00ff194c;
+  opacity: 1;
+  background-color: #0000;
+}
+
+h2 * {
+  will-change: transform;
+}
+/*# sourceMappingURL=index.9e4c6fd2.css.map */
