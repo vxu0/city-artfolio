@@ -19,6 +19,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "start": "parcel",
-    "build": "parcel build --public-url ./"
+    "build": "parcel build --public-url ./city-artfolio/"
   }
 }
