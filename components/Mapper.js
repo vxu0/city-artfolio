@@ -30,7 +30,7 @@ const Mapper = props => {
       //   meow();
       //   break;
       case "10":
-        window.open('https://vxu0.github.io/portfolio/', '__blank').focus();
+        window.open('https://www.instagram.com/vaismade/', '__blank').focus();
         break;
       default:
         setPopup(area);
